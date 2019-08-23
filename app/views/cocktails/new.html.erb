@@ -1,6 +1,4 @@
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
-  <%= f.association :ingredients %>
-  <%= f.association :doses, label_method: "#{:ingredient}", value_method: :id %>
   <%= f.button :submit %>
 <% end %>

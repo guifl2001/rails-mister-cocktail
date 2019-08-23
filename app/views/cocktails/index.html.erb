@@ -4,6 +4,7 @@
     <p>You can check the best ones and create yours</p>
   </div>
 </div>
+<%= link_to "Add a drink", new_cocktail_path, class: "btn btn-ghost" %>
 <div class="cards">
 <% @cocktails.each do |cocktail| %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/featured/?{drinks},{<%=cocktail.name%>})">
@@ -11,4 +12,15 @@
   </div>
 <% end %>
 </div>
-<h1><%= link_to "Add a drink", new_cocktail_path %></h1>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
