@@ -1,2 +1,1 @@
-import 'bootstrap';
-require 'rails-ujs'
+//=require 'rails-ujs'
