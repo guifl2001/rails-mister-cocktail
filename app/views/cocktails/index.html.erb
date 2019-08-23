@@ -1,5 +1,14 @@
-<h1>Cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+  <div class="container">
+    <h1>The <strong>Best</strong> Cocktails <strong>in the world</strong>!</h1>
+    <p>You can check the best ones and create yours</p>
+  </div>
+</div>
+<div class="cards">
 <% @cocktails.each do |cocktail| %>
-  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/featured/?{drinks},{<%=cocktail.name%>})">
+    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </div>
 <% end %>
+</div>
 <h1><%= link_to "Add a drink", new_cocktail_path %></h1>
